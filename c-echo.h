@@ -8,6 +8,6 @@ std::string echo(int length, char** chars) {
             ret += " ";
         }
     }
-    ret += "\n";
+    // removed addition of new line
     return ret;
 }
