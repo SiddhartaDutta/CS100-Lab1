@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    Rectangle rect;
+    Rectangle rect, rect2;
     rect.set_width(3);
     rect.set_height(4);
 
