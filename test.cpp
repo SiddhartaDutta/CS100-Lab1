@@ -22,6 +22,11 @@ TEST(EchoTest, EmptySecondInput){
 	EXPECT_EQ("First input ", echo(3, test_val));
 }
 
+TEST(EchoTest, 5Inputs){
+	char* test_val[6]; test_val[0] = "./c-echo"; test_val[1] = "1"; test_val[2] = "2"; test_val[3] = "3"; test_val[4] = "4"; test_val[5] = "5";
+	EXPECT_EQ("1 2 3 4 5", echo(6, test_val));
+}
+
 int main(int argc, char **argv){
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
